@@ -1,8 +1,8 @@
 # Telegram Send Message Operation
 
-[]
+![Options](https://raw.githubusercontent.com/qadez11/telegram-send-message-operation/main/docs/options.png)
 
-**Telegram Send Message Operation** is an extension for [Directus](https://directus.io /), which allows you to send messages to Telegram chats.
+**Telegram Send Message Operation** is an extension for [Directus](https://directus.io), which allows you to send messages to Telegram chats.
 
 ## Description
 

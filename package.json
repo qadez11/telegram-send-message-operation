@@ -1,5 +1,5 @@
 {
-	"name": "telegram-send-message-operation",
+	"name": "directus-extension-telegram-send-message-operation",
 	"description": "Sends a message to a chat Telegram",
 	"icon": "extension",
 	"version": "1.0.0",

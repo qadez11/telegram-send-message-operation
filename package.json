@@ -2,7 +2,7 @@
 	"name": "directus-extension-telegram-send-message-operation",
 	"description": "Sends a message to a chat Telegram",
 	"icon": "extension",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"repository": {
         "type": "git",
         "url": "https://github.com/qadez11/telegram-send-message-operation"

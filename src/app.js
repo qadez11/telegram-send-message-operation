@@ -3,10 +3,14 @@ export default {
 	name: 'Telegram Send Message',
 	icon: 'telegram',
 	description: 'Sends a message to a chat Telegram',
-	overview: ({ chat_id, disable_notification }) => [
+	overview: ({ chat_id, disable_notification, message_thread_id }) => [
 		{
 			label: 'Chat id',
 			text: chat_id,
+		},
+		{
+			label: 'Thread id',
+			text: message_thread_id ?? "Not specified",
 		},
 		{
 			label: 'Silently',
@@ -33,6 +37,17 @@ export default {
 			meta: {
 				width: 'full',
 				required: true,
+				interface: 'input',
+				note: "You can get it here: https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getUpdates"
+			},
+		},
+		{
+			field: 'message_thread_id',
+			name: 'Thread id',
+			type: 'string',
+			meta: {
+				width: 'full',
+				required: false,
 				interface: 'input',
 				note: "You can get it here: https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getUpdates"
 			},

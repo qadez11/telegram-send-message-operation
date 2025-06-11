@@ -2,7 +2,7 @@ import { log, request } from 'directus:api';
 
 export default {
 	id: 'telegram-send-message-operation',
-	handler: async ({ chat_id, telegram_bot_token, text, disable_notification }) => {
+	handler: async ({ chat_id, message_thread_id, telegram_bot_token, text, disable_notification }) => {
 		try {
 			const response = await request('https://api.telegram.org/bot'+ telegram_bot_token +'/sendMessage', {
 				method: 'POST',
@@ -11,6 +11,7 @@ export default {
 				},
 				body: JSON.stringify({
 					chat_id: chat_id,
+					message_thread_id: message_thread_id,
 					text: text,
 					disable_notification: disable_notification
 				}),
